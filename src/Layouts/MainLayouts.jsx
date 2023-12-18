@@ -4,10 +4,12 @@ import Footer from "../Components/Share/Footer";
 
 export default function MainLayouts() {
   return (
-    <div>
+    <div className="w-full">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
-        <Outlet/>
-        <Footer/>
+        <Outlet />
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
